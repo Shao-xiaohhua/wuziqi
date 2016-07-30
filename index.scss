@@ -1,0 +1,150 @@
+.beijing{
+  width:100%;
+  height: 100%;
+  background: url(73q58PICsph_1024.jpg);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+%juzhong{
+  top:0;
+  left: 0;
+  right:0;
+  bottom:0;
+  margin: auto;
+}
+$width:600px;
+.qipan{
+  width:$width;
+  height: $width;
+  position: relative;
+  @extend %juzhong;
+  border:1px solid black;
+
+}
+.qizi{
+  width: $width/15 - $width/100;
+  height: $width/15 - $width/100;
+  border-radius: 50%;
+  z-index: 100;
+  float: left;
+  position: relative;
+  margin:$width/200 ;
+
+}
+.hei{
+  background: black;
+}
+.bai{
+  background: #fff;
+}
+.hang{
+  width: $width - $width/15;
+  height: 1px;
+  background: black;
+  position: absolute;
+  left:$width/30;
+  display: block;
+}
+@for $i from 0 through 14 {
+  .hang:nth-last-of-type(#{$i+1}){
+    top:$width/30 + $i*$width/15;
+  }
+}
+.lie{
+  width:1px ;
+  height: $width - $width/15;
+  background: black;
+  position: absolute;
+  top:$width/30;
+  display: block;
+}
+@for $i from 0 through 14 {
+  .lie:nth-last-of-type(#{$i+1}){
+    left:$width/30 + $i*$width/15;
+  }
+}
+.diandian{
+  width: $width/100;
+  height: $width/100;
+  background: black;
+  position: absolute;
+  display: block;
+
+  border-radius: 50%;
+}
+
+.qipan span{
+  animation: diao 3s ease;
+  transform: translate3d(-45%,-45%,0);
+  opacity: 0;
+  animation-fill-mode: forwards;
+
+  &:nth-of-type(1){
+    top:3.5*$width/15;
+    left:3.5*$width/15;
+    animation-delay: 0.2s;
+  }
+  &:nth-of-type(2){
+    top:3.5*$width/15;
+    left:11.5*$width/15;
+    animation-delay: 0.4s;
+  }
+  &:nth-of-type(3){
+    top:11.5*$width/15;
+    left:3.5*$width/15;
+    animation-delay: 0.6s;
+  }
+  &:nth-of-type(4){
+    top:11.5*$width/15;
+    left:11.5*$width/15;
+    animation-delay: 0.8s;
+  }
+  &:nth-of-type(5){
+    top:7.5*$width/15;
+    left:7.5*$width/15;
+    animation-delay: 1s;
+  }
+}
+@keyframes diao {
+  0%{
+    transform:translate3d(0,-1000px,0);
+  }
+  100%{
+    transform:translate3d(-45%,-45%,0);
+    opacity: 1;
+  }
+}
+.shizhong{
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  width: 30%;
+  height: 10%;
+  color: black;
+}
+.dan,.shuang{
+  position: fixed;
+
+  right: 20px;
+  width: 10%;
+  height: 10%;
+  color: black;
+}
+.dan{
+  top:30px;
+}
+.shuang{
+  top:60px;
+}
+.hezi{
+  display: none;
+}
+.dan.bianse{
+  color: red;
+}
+.shuang.bianse{
+  color: red;
+}

@@ -1,0 +1,273 @@
+.beijing {
+  width: 100%;
+  height: 100%;
+  background: url(73q58PICsph_1024.jpg);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.qipan {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.qipan {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  border: 1px solid black;
+}
+
+.qizi {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  z-index: 100;
+  float: left;
+  position: relative;
+  margin: 3px;
+}
+
+.hei {
+  background: black;
+}
+
+.bai {
+  background: #fff;
+}
+
+.hang {
+  width: 560px;
+  height: 1px;
+  background: black;
+  position: absolute;
+  left: 20px;
+  display: block;
+}
+
+.hang:nth-last-of-type(1) {
+  top: 20px;
+}
+
+.hang:nth-last-of-type(2) {
+  top: 60px;
+}
+
+.hang:nth-last-of-type(3) {
+  top: 100px;
+}
+
+.hang:nth-last-of-type(4) {
+  top: 140px;
+}
+
+.hang:nth-last-of-type(5) {
+  top: 180px;
+}
+
+.hang:nth-last-of-type(6) {
+  top: 220px;
+}
+
+.hang:nth-last-of-type(7) {
+  top: 260px;
+}
+
+.hang:nth-last-of-type(8) {
+  top: 300px;
+}
+
+.hang:nth-last-of-type(9) {
+  top: 340px;
+}
+
+.hang:nth-last-of-type(10) {
+  top: 380px;
+}
+
+.hang:nth-last-of-type(11) {
+  top: 420px;
+}
+
+.hang:nth-last-of-type(12) {
+  top: 460px;
+}
+
+.hang:nth-last-of-type(13) {
+  top: 500px;
+}
+
+.hang:nth-last-of-type(14) {
+  top: 540px;
+}
+
+.hang:nth-last-of-type(15) {
+  top: 580px;
+}
+
+.lie {
+  width: 1px;
+  height: 560px;
+  background: black;
+  position: absolute;
+  top: 20px;
+  display: block;
+}
+
+.lie:nth-last-of-type(1) {
+  left: 20px;
+}
+
+.lie:nth-last-of-type(2) {
+  left: 60px;
+}
+
+.lie:nth-last-of-type(3) {
+  left: 100px;
+}
+
+.lie:nth-last-of-type(4) {
+  left: 140px;
+}
+
+.lie:nth-last-of-type(5) {
+  left: 180px;
+}
+
+.lie:nth-last-of-type(6) {
+  left: 220px;
+}
+
+.lie:nth-last-of-type(7) {
+  left: 260px;
+}
+
+.lie:nth-last-of-type(8) {
+  left: 300px;
+}
+
+.lie:nth-last-of-type(9) {
+  left: 340px;
+}
+
+.lie:nth-last-of-type(10) {
+  left: 380px;
+}
+
+.lie:nth-last-of-type(11) {
+  left: 420px;
+}
+
+.lie:nth-last-of-type(12) {
+  left: 460px;
+}
+
+.lie:nth-last-of-type(13) {
+  left: 500px;
+}
+
+.lie:nth-last-of-type(14) {
+  left: 540px;
+}
+
+.lie:nth-last-of-type(15) {
+  left: 580px;
+}
+
+.diandian {
+  width: 6px;
+  height: 6px;
+  background: black;
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+}
+
+.qipan span {
+  animation: diao 3s ease;
+  transform: translate3d(-45%, -45%, 0);
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.qipan span:nth-of-type(1) {
+  top: 140px;
+  left: 140px;
+  animation-delay: 0.2s;
+}
+
+.qipan span:nth-of-type(2) {
+  top: 140px;
+  left: 460px;
+  animation-delay: 0.4s;
+}
+
+.qipan span:nth-of-type(3) {
+  top: 460px;
+  left: 140px;
+  animation-delay: 0.6s;
+}
+
+.qipan span:nth-of-type(4) {
+  top: 460px;
+  left: 460px;
+  animation-delay: 0.8s;
+}
+
+.qipan span:nth-of-type(5) {
+  top: 300px;
+  left: 300px;
+  animation-delay: 1s;
+}
+
+@keyframes diao {
+  0% {
+    transform: translate3d(0, -1000px, 0);
+  }
+  100% {
+    transform: translate3d(-45%, -45%, 0);
+    opacity: 1;
+  }
+}
+
+.shizhong {
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  width: 30%;
+  height: 10%;
+  color: black;
+}
+
+.dan, .shuang {
+  position: fixed;
+  right: 20px;
+  width: 10%;
+  height: 10%;
+  color: black;
+}
+
+.dan {
+  top: 30px;
+}
+
+.shuang {
+  top: 60px;
+}
+
+.hezi {
+  display: none;
+}
+
+.dan.bianse {
+  color: red;
+}
+
+.shuang.bianse {
+  color: red;
+}
